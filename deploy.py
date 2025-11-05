@@ -12,9 +12,9 @@ clocX, clocY = 0, 0
 import cv2
 
 # %%
-cap = cv2.VideoCapture(0)
-cap.set(3, wCam)
-cap.set(4, hCam)
+# cap = cv2.VideoCapture(0)
+# cap.set(3, wCam)
+# cap.set(4, hCam)
 
 # %%
 import mediapipe as mp
