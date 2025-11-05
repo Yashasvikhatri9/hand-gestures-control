@@ -173,4 +173,14 @@ def process_frame(frame):
     except Exception as e:
         print("Frame error:", e)
         return frame
-webrtc_streamer(key="virtual-mouse",video_frame_callback=process_frame,async_processing=True)
+RTC_CONFIGURATION = {
+    "iceServers": [
+        {"urls": ["stun:stun.l.google.com:19302"]},  # Google STUN
+        {
+            "urls": ["turn:relay1.expressturn.com:3478"],
+            "username": "ef6E2qvB0a6Ft6pZxH9y6X5j8uWwNR",
+            "credential": "WzA3Rr5c6Jd8nPsD2vYw3sFq1eTk8U"
+        }
+    ]
+}
+webrtc_streamer(key="virtual-mouse",video_frame_callback=process_frame,async_processing=True,rtc_configuration=RTC_CONFIGURATION,)
