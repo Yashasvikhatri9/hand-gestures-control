@@ -28,11 +28,11 @@ mpDraw = mp.solutions.drawing_utils
 tipIds = [4, 8, 12, 16, 20]
 
 # %%
-import autopy
+# import autopy
 
 # %%
-wScr, hScr = autopy.screen.size()
-print('Screen size:', wScr, hScr)
+# wScr, hScr = autopy.screen.size()
+# print('Screen size:', wScr, hScr)
 
 # %%
 import math
